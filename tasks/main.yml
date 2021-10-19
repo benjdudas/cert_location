@@ -1,0 +1,9 @@
+---
+# tasks file for cert_location
+- name: Get cert search locations
+  cert_locations:
+  register: results
+
+- name: print cert locations
+  debug:
+    var: results
